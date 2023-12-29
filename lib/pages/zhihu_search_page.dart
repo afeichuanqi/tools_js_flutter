@@ -48,12 +48,12 @@ class _MeiTuanPage extends State<MeiTuanPage>
                         onSearch: onSearch,
                       ),
                     ),
-                    logic.responseJsons.value.length == 0
+                    logic.responseJsons.value.isEmpty
                         ? SliverToBoxAdapter(
                             child: Container(
                                 width: size.width,
                                 height: size.height - 100,
-                                child: Center(
+                                child: const Center(
                                     child: Text(
                                   "当前搜索条件无任何结果",
                                   style: TextStyle(fontWeight: FontWeight.bold),
